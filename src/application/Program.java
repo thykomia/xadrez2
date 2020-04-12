@@ -1,10 +1,13 @@
 package application;
 
+import bordgame.Position;
+
 public class Program {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("teste");
-	}
+		Position pos = new Position(2, 5);
+		System.out.println(pos);
 
+}
 }
