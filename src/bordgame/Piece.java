@@ -4,7 +4,7 @@ public class Piece {
 	protected Position position;
 	protected Board board;
 	
-	public Piece(Position position, Board board) {
+	public Piece(Board board) {
 		position = null;
 		this.board = board;
 	}
@@ -12,10 +12,5 @@ public class Piece {
 	protected Board getBoard() {
 		return board;
 	}
-	
-	
-	
-	
-	
-	
-}
+
+	}

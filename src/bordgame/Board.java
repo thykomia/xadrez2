@@ -1,27 +1,36 @@
 package bordgame;
 
 public class Board {
-	private int row;
-	private int column;
+	private int rows;
+	private int columns;
 	private Piece[][] pieces;
 	
+	
 	public Board(int row, int column) {
-		this.row = row;
-		this.column = column;
+		this.rows = row;
+		this.columns = column;
 		this.pieces = new Piece[row][column];
 		}
 	
-	public int getRow() {
-		return row;
+	public  Piece piece (int row, int column) {
+		return pieces[row][column];
 	}
-	public void setRow(int row) {
-		this.row = row;
+
+	public  Piece piece (Position position) {
+		return pieces[position.getRow()][position.getColumn()];
 	}
-	public int getColumn() {
-		return column;
+	
+	public int getRows() {
+		return rows;
 	}
-	public void setColumn(int column) {
-		this.column = column;
+	public void setRows(int row) {
+		this.rows = row;
+	}
+	public int getColumns() {
+		return columns;
+	}
+	public void setColumns(int column) {
+		this.columns = column;
 	}
 	
 	
