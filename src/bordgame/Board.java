@@ -31,7 +31,7 @@ public class Board {
 	}
 	public  Piece piece (Position position) {
 		if(!positionExists(position)) {
-			throw new BoardException("Possitoin nao existe no tabuleiro");
+			throw new BoardException("Possition nao existe no tabuleiro");
 		}
 		return pieces[position.getRow()][position.getColumn()];
 	}
